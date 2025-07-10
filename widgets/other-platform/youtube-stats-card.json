@@ -1,0 +1,213 @@
+{
+  "enabled": false,
+  "title": "YouTube Stats Card",
+  "title:pt-BR": "YouTube Stats Card",
+  "description": "Get dynamically generated YouTube Stats Cards for your github readmes & websites!",
+  "description:en-US": "Get dynamically generated YouTube Stats Cards for your github readmes & websites!",
+  "description:pt-BR": "Obtenha cartões de estatísticas do YouTube gerados dinamicamente para seus arquivos readmes do GitHub e sites!",
+  "tag": {
+    "repo": "https://github.com/dhyeythumar/youtube-stats-card",
+    "onlineTool": "https://github.com/dhyeythumar/youtube-stats-card",
+    "officialDoc": "https://github.com/dhyeythumar/youtube-stats-card"
+  },
+  "linkRules": {
+    "querys": [
+      {
+        "name": "channelid",
+        "type": "string",
+        "required": true,
+        "description": "Youtube's channel ID.",
+        "description:en-US": "Youtube's channel ID.",
+        "description:pt-BR": "ID do canal no Youtube.",
+        "moreDescription": "Example: `tUCpKizIKSk8ga_LCI3e3GUig`。",
+        "moreDescription:en-US": "Example: `UCpKizIKSk8ga_LCI3e3GUig`.",
+        "moreDescription:pt-BR": "Exemplo: `UCpKizIKSk8ga_LCI3e3GUig`."
+      },
+      {
+        "name": "layout",
+        "type": "string",
+        "required": false,
+        "default": "default",
+        "description": "Card layout.",
+        "description:en-US": "Card layout.",
+        "description:pt-BR": "Layout do cartão.",
+        "moreDescription": "Supported: `center` or `extruded`。",
+        "moreDescription:en-US": "Supported: `center` or `extruded`.",
+        "moreDescription:pt-BR": "Suporta: `center` or `extruded`."
+      },
+      {
+        "name": "hide_icons",
+        "type": "boolean",
+        "required": false,
+        "default": "false",
+        "description": "Hide Icons.",
+        "description:en-US": "Hide Icons.",
+        "description:pt-BR": "Ocultar ícones.",
+        "moreDescription": "Supported: `true` or `false`.",
+        "moreDescription:en-US": "Supported: `true` or `false`.",
+        "moreDescription:pt-BR": "Suporta: `true` ou `false`."
+      },
+      {
+        "name": "hide_logo",
+        "type": "boolean",
+        "default": "false",
+        "description": "Hide Logo.",
+        "description:en-US": "Hide Logo.",
+        "description:pt-BR": "Ocultar o logo.",
+        "moreDescription": "Supported: `true` or `false`.",
+        "moreDescription:en-US": "Supported: `true` or `false`.",
+        "moreDescription:pt-BR": "Suporta: `true` ou `false`."
+      },
+      {
+        "name": "theme",
+        "type": "string",
+        "default": "default",
+        "description": "Theme.",
+        "description:en-US": "Theme.",
+        "description:pt-BR": "Tema.",
+        "moreDescription": "Check all the available color [themes here](https://github.com/dhyeythumar/youtube-stats-card/blob/main/themes/README.md).",
+        "moreDescription:en-US": "Check all the available color [themes here](https://github.com/dhyeythumar/youtube-stats-card/blob/main/themes/README.md).",
+        "moreDescription:pt-BR": "Verifique todos os [temas aqui](https://github.com/dhyeythumar/youtube-stats-card/blob/main/themes/README.md)."
+      },
+      {
+        "name": "hide_border",
+        "type": "boolean",
+        "description": "Hide Border.",
+        "description:en-US": "Hide Border.",
+        "description:pt-BR": "Ocultar a borda.",
+        "moreDescription": "Supported: `true` or `false`.",
+        "moreDescription:en-US": "Supported: `true` or `false`.",
+        "moreDescription:pt-BR": "Suporta: `true` ou `false`."
+      },
+      {
+        "name": "hide_channelname",
+        "type": "boolean",
+        "description": "Hide the channel name in video card.",
+        "description:en-US": "Hide the channel name in video card.",
+        "description:pt-BR": "Ocultar o nome do canal no cartão do vídeo.",
+        "moreDescription": "Supported: `true` or `false`.",
+        "moreDescription:en-US": "Supported: `true` or `false`.",
+        "moreDescription:pt-BR": "Suporta: `true` ou `false`."
+      },
+      {
+        "name": "custom_title",
+        "type": "string",
+        "description": "Custom Title.",
+        "description:en-US": "Custom Title.",
+        "description:pt-BR": "Título customizado.",
+        "moreDescription": "Example: `custom_title=My%20Channel%20Name`.",
+        "moreDescription:en-US": "Example: `custom_title=My%20Channel%20Name`.",
+        "moreDescription:pt-BR": "Exemplo: `custom_title=My%20Channel%20Name`."
+      },
+      {
+        "name": "title_color",
+        "type": "string",
+        "description": "Card's title color (hex color)",
+        "description:en-US": "Card's title color (hex color)",
+        "description:pt-BR": "Cor do título do cartão (cor hexadecimal)",
+        "moreDescription": "Example: `cbf7db`.",
+        "moreDescription:en-US": "Example: `cbf7db`.",
+        "moreDescription:pt-BR": "Exemplo: `cbf7db`."
+      },
+      {
+        "name": "text_color",
+        "type": "string",
+        "description": "Body text color (hex color)",
+        "description:en-US": "Body text color (hex color)",
+        "description:pt-BR": "Cor do texto no corpo do cartão (cor hexadecimal)",
+        "moreDescription": "Example: `fffefe`.",
+        "moreDescription:en-US": "Example: `fffefe`.",
+        "moreDescription:pt-BR": "Exemplo: `fffefe`."
+      },
+      {
+        "name": "icon_color",
+        "type": "string",
+        "description": "Icons color if available (hex color)",
+        "description:en-US": "Icons color if available (hex color)",
+        "description:pt-BR": "Cor dos ícones disponíveis (cor hexadecimal)",
+        "moreDescription": "Example: `99ffbe`.",
+        "moreDescription:en-US": "Example: `99ffbe`.",
+        "moreDescription:pt-BR": "Exemplo: `99ffbe`."
+      },
+      {
+        "name": "bg_color",
+        "type": "string",
+        "description": "Card's background color (hex color)",
+        "description:en-US": "Card's background color (hex color)",
+        "description:pt-BR": "Cor do plano de fundo (cor hexadecimal)",
+        "moreDescription": "Example: `40423e`.",
+        "moreDescription:en-US": "Example: `40423e`.",
+        "moreDescription:pt-BR": "Exemplo: `40423e`."
+      },
+      {
+        "name": "cache_seconds",
+        "type": "string",
+        "default": "7200",
+        "description": "Cache header manually (min: 1800, max: 86400).",
+        "description:en-US": "Body text color (hex color)",
+        "description:pt-BR": "Cor do texto no corpo do cartão (cor hexadecimal)",
+        "moreDescription": "Supported: min: `1800`, max: `8640`.",
+        "moreDescription:en-US": "Supported: min: `1800`, max: `8640`.",
+        "moreDescription:pt-BR": "Suporta: min: `1800`, max: `8640`."
+      },
+      {
+        "name": "videoid ",
+        "type": "string",
+        "description": "Youtube's video ID.",
+        "description:en-US": "Youtube's video ID.",
+        "description:pt-BR": "ID do vídeo no Youtube.",
+        "moreDescription": "Example: `4vwZNTagHsQ`.",
+        "moreDescription:en-US": "Example: `4vwZNTagHsQ`.",
+        "moreDescription:pt-BR": "Exemplo: `4vwZNTagHsQ`."
+      }
+    ],
+    "params": [
+      {
+        "name": "video",
+        "type": "string",
+        "default": "flat",
+        "description": "Card with Youtube video ID.",
+        "description:en-US": "Card with Youtube video ID.",
+        "description:pt-BR": "Cartão com ID do vídeo do Youtbe",
+        "moreDescription": "Example: `4vwZNTagHsQ`.",
+        "moreDescription:en-US": "Example: `4vwZNTagHsQ`.",
+        "moreDescription:pt-BR": "Exemplo: `4vwZNTagHsQ`."
+      }
+    ],
+    "uriTemplate": "https://youtube-stats-card.vercel.app/api/{video}{?channelid,layout,hide_icons,theme,hide_border,hide_logo,videoid,title_color,text_color,text_color,icon_color,bg_color,hide_channelname,cache_seconds}"
+  },
+  "examples": [
+    {
+      "description": "YouTube Channel Stats Card",
+      "description:en-US": "YouTube Channel Stats Card",
+      "description:pt-BR": "Cartão com estatísticas do canal no Youtube.",
+      "annotate": "Dhyey's youtube stats",
+      "alt": "Dhyey's youtube stats",
+      "href": "https://youtube-stats-card.vercel.app/api?channelid=UCpKizIKSk8ga_LCI3e3GUig",
+      "images": [
+        {
+          "alt": "YouTube Channel Stats Card",
+          "alt:en-US": "YouTube Channel Stats Card",
+          "alt:pt-BR": "YouTube Channel Stats Card",
+          "href": "https://youtube-stats-card.vercel.app/api?channelid=UCpKizIKSk8ga_LCI3e3GUig"
+        }
+      ]
+    },
+    {
+      "description": "YouTube Video Stats Card",
+      "description:en-US": "YouTube Video Stats Card",
+      "description:pt-BR": "Cartão com estatísticas do vídeo no Youtube.",
+      "annotate": "Dhyey's video stats",
+      "alt": "YouTube Video Stats Card",
+      "href": "https://youtube-stats-card.vercel.app/api/video?videoid=4vwZNTagHsQ",
+      "images": [
+        {
+          "alt": "YouTube Video Stats Card",
+          "alt:en-US": "YouTube Video Stats Card",
+          "alt:pt-BR": "YouTube Video Stats Card",
+          "href": "https://youtube-stats-card.vercel.app/api/video?videoid=4vwZNTagHsQ"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "enabled": false,
+  "title": "Github Duolingo Stats",
+  "title:pt-BR": "Github Duolingo Stats",
+  "description": "Heavily inspired by projects such as [github readme stats](https://github.com/anuraghazra/github-readme-stats), the github duolingo widget allows github users to display some of their basic duolingo stats on their github profile READMEs.",
+  "description:en-US": "Heavily inspired by projects such as [github readme stats](https://github.com/anuraghazra/github-readme-stats), the github duolingo widget allows github users to display some of their basic duolingo stats on their github profile READMEs.",
+  "description:pt-BR": "Fortemente inspirado em projetos como [github readme stats](https://github.com/anuraghazra/github-readme-stats), o widget duolingo do github permite que os usuários do github exibam algumas de suas estatísticas básicas do duolingo em seus READMEs de perfil do github.",
+  "tag": {
+    "repo": "https://github.com/ashleytdavis/github-duolingo-widget",
+    "onlineTool": "https://github.com/ashleytdavis/github-duolingo-widget",
+    "officialDoc": "https://github.com/ashleytdavis/github-duolingo-widget"
+  },
+  "linkRules": {
+    "querys": [
+      {
+        "name": "username",
+        "type": "string",
+        "required": true,
+        "description": "Your username in Duolingo.",
+        "description:en-US": "Your username in Duolingo.",
+        "description:pt-BR": "Seu nome de usuário no Duolingo.",
+        "moreDescription": "Example: `a-shelly123`.",
+        "moreDescription:en-US": "Example: `a-shelly123`.",
+        "moreDescription:pt-BR": "Exemplo: `a-shelly123`."
+      },
+      {
+        "name": "darkMode",
+        "type": "boolean",
+        "required": false,
+        "default": "false",
+        "description": "Your username in Duolingo.",
+        "description:en-US": "Your username in Duolingo.",
+        "description:pt-BR": "Seu nome de usuário no Duolingo.",
+        "moreDescription": "Supported: `true` `false`。",
+        "moreDescription:en-US": "Supported: `true` `false`.",
+        "moreDescription:pt-BR": "Suporta: `true` `false`."
+      },
+      {
+        "name": "gradientStart",
+        "type": "string",
+        "required": false,
+        "description": "Gradient start color.",
+        "description:en-US": "Gradient start color.",
+        "description:pt-BR": "Cor de início do gradiente.",
+        "moreDescription": "Example: `000033`.",
+        "moreDescription:en-US": "Example: `000033`.",
+        "moreDescription:pt-BR": "Exemplo: `000033`."
+      },
+      {
+        "name": "gradientEnd",
+        "type": "string",
+        "required": false,
+        "description": "Gradient end color.",
+        "description:en-US": "Gradient end color.",
+        "description:pt-BR": "Cor do fim do gradiente.",
+        "moreDescription": "Example: `000066`.",
+        "moreDescription:en-US": "Example: `000066`.",
+        "moreDescription:pt-BR": "Exemplo: `000066`."
+      },
+      {
+        "name": "textColor",
+        "type": "string",
+        "required": false,
+        "description": "Your username in Duolingo.",
+        "description:en-US": "Your username in Duolingo.",
+        "description:pt-BR": "Seu nome de usuário no Duolingo.",
+        "moreDescription": "Example: `ffffff`.",
+        "moreDescription:en-US": "Example: `ffffff`.",
+        "moreDescription:pt-BR": "Exemplo: `ffffff`."
+      },
+      {
+        "name": "width",
+        "type": "number",
+        "required": false,
+        "description": "Card width.",
+        "description:en-US": "Card width.",
+        "description:pt-BR": "Largura do cartão.",
+        "moreDescription": "Example: `400`.",
+        "moreDescription:en-US": "Example: `400`.",
+        "moreDescription:pt-BR": "Exemplo: `400`."
+      }
+    ],
+    "uriTemplate": "https://github-duolingo-widget.onrender.com/api/duolingo-badge{?username,darkMode,gradientStart,gradientEnd,textColor,width}"
+  },
+  "examples": [
+    {
+      "description": "Default theme",
+      "description:en-US": "Default theme",
+      "description:pt-BR": "Tema padrão",
+      "annotate": "a-shelly123",
+      "alt": "Duolingo Stats",
+      "href": "https://github-duolingo-widget.onrender.com/api/duolingo-badge?username=a-shelly123",
+      "images": [
+        {
+          "alt": "Duolingo Stats",
+          "alt:en-US": "Duolingo Stats",
+          "alt:pt-BR": "Duolingo Stats",
+          "href": "https://github-duolingo-widget.onrender.com/api/duolingo-badge?username=a-shelly123"
+        }
+      ]
+    },
+    {
+      "description": "Combining Options",
+      "description:en-US": "Combining Options",
+      "description:pt-BR": "Opções combinadas",
+      "annotate": "a-shelly123",
+      "alt": "Duolingo Stats",
+      "href": "https://github-duolingo-widget.onrender.com/api/duolingo-badge?username=a-shelly123&darkMode=true&gradientStart=000033&gradientEnd=000066&textColor=ffffff&width=400",
+      "images": [
+        {
+          "alt": "Duolingo Stats",
+          "alt:en-US": "Duolingo Stats",
+          "alt:pt-BR": "Duolingo Stats",
+          "href": "https://github-duolingo-widget.onrender.com/api/duolingo-badge?username=a-shelly123&darkMode=true&gradientStart=000033&gradientEnd=000066&textColor=ffffff&width=400"
+        }
+      ]
+    }
+  ]
+}

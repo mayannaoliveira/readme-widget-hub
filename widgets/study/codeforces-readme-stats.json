@@ -1,0 +1,118 @@
+{
+  "enabled": false,
+  "title": "Codeforces Readme Stats",
+  "title:pt-BR": "Codeforces Readme Stats",
+  "description": "An API that generates beautiful statistics of your Codeforces profile as an SVG image, perfect for showcasing your competitive programming skills and achievements on Github.",
+  "description:en-US": "An API that generates beautiful statistics of your Codeforces profile as an SVG image, perfect for showcasing your competitive programming skills and achievements on Github.",
+  "description:pt-BR": "Uma API que gera belas estatísticas do seu perfil do Codeforces como uma imagem SVG, perfeito para exibir suas habilidades de programação competitiva e conquistas no Github.",
+  "tag": {
+    "repo": "https://github.com/RedHeadphone/codeforces-readme-stats",
+    "onlineTool": "https://codeforces-readme-stats.vercel.app/",
+    "officialDoc": "https://redheadphone.github.io/codeforces-readme-stats/"
+  },
+  "linkRules": {
+    "querys": [
+      {
+        "name": "username",
+        "type": "string",
+        "required": true,
+        "description": "Your username in Codeforces.",
+        "description:en-US": "Your username in Codeforces.",
+        "description:pt-BR": "Seu usuário no Codeforces.",
+        "moreDescription": "Example: `redheadphone`.",
+        "moreDescription:en-US": "Example: `redheadphone`.",
+        "moreDescription:pt-BR": "Exemplo: `redheadphone`."
+      },
+      {
+        "name": "force_username",
+        "type": "boolean",
+        "required": true,
+        "description": "Display your full name.",
+        "description:en-US": "Display your full name.",
+        "description:pt-BR": "Exibir o seu nome completo.",
+        "moreDescription": "Supported: `true` `false`。",
+        "moreDescription:en-US": "Supported: `true` `false`.",
+        "moreDescription:pt-BR": "Suporta: `true` `false`."
+      },
+      {
+        "name": "theme",
+        "type": "string",
+        "required": false,
+        "description": "Check here the list of [themes](https://redheadphone.github.io/codeforces-readme-stats/themes).",
+        "description:en-US": "Check here the list of [themes](https://redheadphone.github.io/codeforces-readme-stats/themes).",
+        "description:pt-BR": "Verique aqui a lista de [temas](https://redheadphone.github.io/codeforces-readme-stats/themes).",
+        "moreDescription": "Examples: `tokyonight`, `onedark` or `cobalt`.",
+        "moreDescription:en-US": "Examples: `tokyonight`, `onedark` or `cobalt`.",
+        "moreDescription:pt-BR": "Exemplos: `tokyonight`, `onedark` or `cobalt`."
+      },
+      {
+        "name": "disable_animations",
+        "type": "boolean",
+        "required": false,
+        "description": "Disable animations.",
+        "description:en-US": "Disable animations.",
+        "description:pt-BR": "Desabilitar animações.",
+        "moreDescription": "Supported: `true` `false`。",
+        "moreDescription:en-US": "Supported: `true` `false`.",
+        "moreDescription:pt-BR": "Suporta: `true` `false`."
+      },
+      {
+        "name": "show_icons",
+        "type": "boolean",
+        "required": false,
+        "description": "Show icons.",
+        "description:en-US": "Show icons.",
+        "description:pt-BR": "Exibir ícones.",
+        "moreDescription": "Supported: `true` `false`。",
+        "moreDescription:en-US": "Supported: `true` `false`.",
+        "moreDescription:pt-BR": "Suporta: `true` `false`."
+      },
+      {
+        "name": "force_username",
+        "type": "boolean",
+        "required": false,
+        "description": "Display the full username.",
+        "description:en-US": "Display the full username.",
+        "description:pt-BR": "Exibe o nome completo do usuário.",
+        "moreDescription": "Supported: `true` `false`。",
+        "moreDescription:en-US": "Supported: `true` `false`.",
+        "moreDescription:pt-BR": "Suporta: `true` `false`."
+      }
+    ],
+    "uriTemplate": "https://codeforces-readme-stats.vercel.app/api/card{?username,theme,disable_animations,show_icons,force_username}"
+  },
+  "examples": [
+    {
+      "description": "Codeforces Stats Card",
+      "description:en-US": "Codeforces Stats Card",
+      "description:pt-BR": "Cartão de Estatísticas do Codeforces",
+      "annotate": "redheadphone",
+      "alt": "Codeforces Readme Stats",
+      "href": "https://codeforces-readme-stats.vercel.app/api/card?username=redheadphone)](https://codeforces.com/profile/redheadphone",
+      "images": [
+        {
+          "alt": "Codeforces Readme Stats",
+          "alt:en-US": "Codeforces Readme Stats",
+          "alt:pt-BR": "Codeforces Readme Stats",
+          "href": "https://codeforces-readme-stats.vercel.app/api/card?username=redheadphone)](https://codeforces.com/profile/redheadphone"
+        }
+      ]
+    },
+    {
+      "description": "Codeforces Badge",
+      "description:en-US": "Codeforces Badge",
+      "description:pt-BR": "Emblema do Codeforces",
+      "annotate": "redheadphone",
+      "alt": "Codeforces Readme Stats",
+      "href": "https://codeforces-readme-stats.vercel.app/api/badge?username=redheadphone",
+      "images": [
+        {
+          "alt": "Codeforces Readme Stats",
+          "alt:en-US": "Codeforces Readme Stats",
+          "alt:pt-BR": "Codeforces Readme Stats",
+          "href": "https://codeforces-readme-stats.vercel.app/api/badge?username=redheadphone"
+        }
+      ]
+    }
+  ]
+}

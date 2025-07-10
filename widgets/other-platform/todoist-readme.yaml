@@ -1,0 +1,195 @@
+enabled: false
+title: Todoist Stats
+title:pt-BR: Todoist Stats
+description: Todoist gives you the confidence that everything’s organized and accounted for, so you can make progress on the things that are important to you.
+description:en-US: Todoist gives you the confidence that everything’s organized and accounted for, so you can make progress on the things that are important to you.
+description:pt-BR: O Todoist te dar a confiança de que tudo está organizado e contabilizado, para que você possa progredir nas coisas que são importantes para você.
+tag:
+  repo: https://github.com/abhisheknaiidu/todoist-readme
+  onlineTool: https://www.todoist.com
+  officialDoc: https://github.com/abhisheknaiidu/todoist-readme
+  dependentAction: true
+usage: |
+  1. You'll need a Todoist API Token. You can get that from [here](https://beta.todoist.com/prefs/integrations).
+  2. You need to save the Todoist API Token in the repository secrets. You can find that in the Settings of your Repository. Be sure to save those as the following.
+  3. You need to update the README file(README.md) with 2 comments. You can refer [here](#update-your-readme) for updating it.
+  4. Go to your `<username>/<username>/actions`, hit `New workflow`, `set up a workflow yourself`, delete all the default content github made for you.
+  5. Copy the following code and paste it to your new workflow `update-todoist.yml`.
+
+  ```yml
+  name: Todoist Readme
+
+  on:
+    workflow_dispatch:
+    schedule:
+      # Runs every minute
+      - cron: "* * * * *"
+
+  jobs:
+    update-readme:
+      name: Update todoist stats
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+        - uses: abhisheknaiidu/todoist-readme@master
+          with:
+            TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
+            PREMIUM: ""
+  ```
+
+  6. Go to your repo secrets by hitting `Settings => Secrets` tab in your profile repo. You can also enter the url https://github.com/USERNAME/USERNAME/settings/secrets . Please replace the `USERNAME` with your own username.
+  7. Create a new `Secret`. `Name`: `TODOIST_API_KEY`, `Value`: Paste the Todoist API Token here. If you don't know what is the token, please go to [here](https://beta.todoist.com/prefs/integrations) to find your API Key there.
+
+  ```markdown
+  # Todoist Stats
+  <!-- TODO-IST:START -->
+  <!-- TODO-IST:END -->
+  ```
+usage:en-US: |
+  1. You'll need a Todoist API Token. You can get that from [here](https://beta.todoist.com/prefs/integrations).
+  2. You need to save the Todoist API Token in the repository secrets. You can find that in the Settings of your Repository. Be sure to save those as the following.
+  3. You need to update the README file(README.md) with 2 comments. You can refer [here](#update-your-readme) for updating it.
+  4. Go to your `<username>/<username>/actions`, hit `New workflow`, `set up a workflow yourself`, delete all the default content github made for you.
+  5. Copy the following code and paste it to your new workflow `update-todoist.yml`.
+
+  ```yml
+  name: Todoist Readme
+
+  on:
+    workflow_dispatch:
+    schedule:
+      # Runs every minute
+      - cron: "* * * * *"
+
+  jobs:
+    update-readme:
+      name: Update todoist stats
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+        - uses: abhisheknaiidu/todoist-readme@master
+          with:
+            TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
+            PREMIUM: ""
+  ```
+
+  6. Go to your repo secrets by hitting `Settings => Secrets` tab in your profile repo. You can also enter the url https://github.com/USERNAME/USERNAME/settings/secrets . Please replace the `USERNAME` with your own username.
+  7. Create a new `Secret`. `Name`: `TODOIST_API_KEY`, `Value`: Paste the Todoist API Token here. If you don't know what is the token, please go to [here](https://beta.todoist.com/prefs/integrations) to find your API Key there.
+
+  ```markdown
+  # Todoist Stats
+  <!-- TODO-IST:START -->
+  <!-- TODO-IST:END -->
+  ```
+
+usage:pt-BR: |
+  1. You'll need a Todoist API Token. You can get that from [here](https://beta.todoist.com/prefs/integrations).
+  2. You need to save the Todoist API Token in the repository secrets. You can find that in the Settings of your Repository. Be sure to save those as the following.
+  3. You need to update the README file(README.md) with 2 comments. You can refer [here](#update-your-readme) for updating it.
+  4. Go to your `<username>/<username>/actions`, hit `New workflow`, `set up a workflow yourself`, delete all the default content github made for you.
+  5. Copy the following code and paste it to your new workflow `update-todoist.yml`.
+
+  ```yml
+  name: Todoist Readme
+
+  on:
+    workflow_dispatch:
+    schedule:
+      # Runs every minute
+      - cron: "* * * * *"
+
+  jobs:
+    update-readme:
+      name: Update todoist stats
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+        - uses: abhisheknaiidu/todoist-readme@master
+          with:
+            TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
+            PREMIUM: ""
+  ```
+
+  6. Go to your repo secrets by hitting `Settings => Secrets` tab in your profile repo. You can also enter the url https://github.com/USERNAME/USERNAME/settings/secrets . Please replace the `USERNAME` with your own username.
+  7. Create a new `Secret`. `Name`: `TODOIST_API_KEY`, `Value`: Paste the Todoist API Token here. If you don't know what is the token, please go to [here](https://beta.todoist.com/prefs/integrations) to find your API Key there.
+
+  ```markdown
+  # Todoist Stats
+  <!-- TODO-IST:START -->
+  <!-- TODO-IST:END -->
+  ```
+
+linkRules:
+  actions:
+    - name: TODOIST_API_KEY
+      type: string
+      required: true
+      description: Todoist API Token.
+      description:en-US: Todoist API Token.
+      description:pt-BR: Token da API do Todoist.
+      moreDescription: If you don't know what is the token, please go to [here](https://beta.todoist.com/prefs/integrations) to find your API Key there.
+      moreDescription:en-US: If you don't know what is the token, please go to [here](https://beta.todoist.com/prefs/integrations) to find your API Key there.
+      moreDescription:pt-BR: Se você não sabe qual é o token, por favor clique [aqui](https://beta.todoist.com/prefs/integrations) para descobrir suas chave da API.
+    - name: PREMIUM
+      type: string
+      required: true
+      description: If you have a premium account just set as `true` if not just `""`.
+      description:en-US: If you have a premium account just set as `true` if not just `""`.
+      description:pt-BR: Se você tem a conta premium determine como `true` se não deixe apenas `""`.
+      moreDescription: Example `true` or `""`.
+      moreDescription:en-US: Example `true` or `""`.
+      moreDescription:pt-BR: Exemplo `true` or `""`.
+
+examples: |
+  ```markdown
+  🚧 **my todoist stats:**
+  <!-- TODO-IST:START -->
+  🏆  8,004 Karma Points
+  🌸  Completed 0 tasks today
+  ✅  Completed 673 tasks so far
+  ⏳  Longest streak is 10 days
+  <!-- TODO-IST:END -->
+  ```
+  🚧 **my todoist stats:**
+  <!-- TODO-IST:START -->
+  🏆  8,004 Karma Points
+  🌸  Completed 0 tasks today
+  ✅  Completed 673 tasks so far
+  ⏳  Longest streak is 10 days
+  <!-- TODO-IST:END -->
+
+examples:en-US: |
+  ```markdown
+  🚧 **my todoist stats:**
+  <!-- TODO-IST:START -->
+  🏆  8,004 Karma Points
+  🌸  Completed 0 tasks today
+  ✅  Completed 673 tasks so far
+  ⏳  Longest streak is 10 days
+  <!-- TODO-IST:END -->
+  ```
+  🚧 **my todoist stats:**
+  <!-- TODO-IST:START -->
+  🏆  8,004 Karma Points
+  🌸  Completed 0 tasks today
+  ✅  Completed 673 tasks so far
+  ⏳  Longest streak is 10 days
+  <!-- TODO-IST:END -->
+
+examples:pt-BR: |
+  ```markdown
+  🚧 **my todoist stats:**
+  <!-- TODO-IST:START -->
+  🏆  8,004 Karma Points
+  🌸  Completed 0 tasks today
+  ✅  Completed 673 tasks so far
+  ⏳  Longest streak is 10 days
+  <!-- TODO-IST:END -->
+  ```
+  🚧 **my todoist stats:**
+  <!-- TODO-IST:START -->
+  🏆  8,004 Karma Points
+  🌸  Completed 0 tasks today
+  ✅  Completed 673 tasks so far
+  ⏳  Longest streak is 10 days
+  <!-- TODO-IST:END -->
